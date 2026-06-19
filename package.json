@@ -1,6 +1,6 @@
 {
   "name": "@particle-academy/fancy-x-files",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zero-dependency, isomorphic manager for the well-known files every modern web app owes bots and agents — robots.txt, security.txt, llms.txt, humans.txt, sitemap.xml, ai.txt. The Node/TypeScript mirror of the PHP particle-academy/fancy-x-files. Includes a leak-proof robots.txt builder and a default-open RobotsPolicy evaluator.",
   "repository": {
     "type": "git",
