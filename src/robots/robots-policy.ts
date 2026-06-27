@@ -25,7 +25,11 @@ export class RobotsPolicy {
     let sawRule = false;
 
     for (const rawLine of robotsTxt.split(/\r\n|\r|\n/)) {
-      const line = rawLine.replace(/#.*$/, "").trim();
+      // Strip a trailing "#" comment. Done with indexOf/slice rather than a
+      // regex so an externally-fetched robots.txt can't trigger regex
+      // backtracking (CodeQL js/polynomial-redos).
+      const hash = rawLine.indexOf("#");
+      const line = (hash === -1 ? rawLine : rawLine.slice(0, hash)).trim();
       if (line === "") continue;
 
       const colon = line.indexOf(":");
