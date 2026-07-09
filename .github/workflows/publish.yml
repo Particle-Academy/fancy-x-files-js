@@ -30,4 +30,4 @@ jobs:
       # configure the Trusted Publisher on npmjs.com + revoke that token so
       # releases ship via OIDC. npm 11.5.1+ needed (runner ships 10.x → npx).
       - name: Publish
-        run: npx -y npm@latest publish --provenance --access public
+        run: npx -y npm@11.18.0 publish --provenance --access public
