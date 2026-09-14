@@ -1,5 +1,7 @@
 # @particle-academy/fancy-x-files
 
+[![Fancified](art/fancified.svg)](https://particle.academy)
+
 The Node/TypeScript mirror of the PHP **particle-academy/fancy-x-files**.
 
 Headless manager for the **well-known files** every modern web app owes both
